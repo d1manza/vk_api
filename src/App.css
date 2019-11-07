@@ -1,22 +1,132 @@
-.App {
-  text-align: center;
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
+.wrapper > div.wrapper__vk {
+  grid-column: 1/2;
+  justify-self: center;
+  padding: 5%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.wrapper > div.wrapper__vk > div.wrapper__vk__border {
+  display: grid;
+  grid-template-rows: 1fr 4fr;
+  border: 2px solid #597da3;
+  border-radius: 15px;
+  padding: 5%;
+  font-family: Tahoma;
+  font-size: 12px;
+  background-color: #edeef0;
 }
 
-.App-link {
-  color: #09d3ac;
+.wrapper > div.wrapper__vk > div.wrapper__vk__border > form.wrapper__vk__border__form {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-row: 1/2;
+  padding: 10px;
+  background: #4b77a8;
+  border-radius: 8px;
+}
+
+.wrapper > div.wrapper__vk > div.wrapper__vk__border > form.wrapper__vk__border__form > div.wrapper__vk__border__form__inputText {
+  grid-row: 1/2;
+  align-self: center;
+}
+
+.wrapper > div.wrapper__vk > div.wrapper__vk__border > form.wrapper__vk__border__form > div.wrapper__vk__border__form__inputText > input.wrapper__vk__border__form__inputText__id--true {
+  border: 1px solid #4b77a8;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: white;
+  font-weight: bold;
+  outline: none;
+  color: black;
+  letter-spacing: 0.1em;
+}
+
+.wrapper > div.wrapper__vk > div.wrapper__vk__border > form.wrapper__vk__border__form > div.wrapper__vk__border__form__inputText > input.wrapper__vk__border__form__inputText__id--false {
+  border: 1px solid red;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: white;
+  font-weight: bold;
+  outline: none;
+  color: red;
+  letter-spacing: 0.1em;
+}
+
+.wrapper > div.wrapper__vk > div.wrapper__vk__border > form.wrapper__vk__border__form > div.wrapper__vk__border__form__button {
+  grid-row: 2/3;
+  align-self: center;
+  padding-top: 5px;
+}
+
+.wrapper > div.wrapper__vk > div.wrapper__vk__border > form.wrapper__vk__border__form > div.wrapper__vk__border__form__button > button.wrapper__vk__border__form__button__search {
+  outline: none;
+  box-shadow: none;
+  border: 0px;
+  border-radius: 5px;
+  background-color: #bdcee3;
+  padding: 3px;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-weight: bold;
+  color: #1f3b60;
+}
+
+.wrapper > div.wrapper__vk > div.wrapper__vk__border > div.wrapper__vk__border__info {
+  grid-row: 2/3;
+  align-self: center;
+  justify-self: center;
+  padding: 3%;
+}
+
+.wrapper > div.wrapper__vk > div.wrapper__vk__border > div.wrapper__vk__border__info > div.wrapper__vk__border__info__image {
+  width: 102px;
+  height: 102px;
+  padding-bottom: 5%;
+  margin: 0 auto;
+}
+
+.wrapper > div.wrapper__vk > div.wrapper__vk__border > div.wrapper__vk__border__info > div.wrapper__vk__border__info__image > img.wrapper__vk__border__info__image__photo {
+  border-radius: 100px;
+}
+
+.wrapper > div.wrapper__vk > div.wrapper__vk__border > div.wrapper__vk__border__info > div.wrapper__vk__border__info__id {
+  padding: 1%;
+}
+
+.wrapper > div.wrapper__vk > div.wrapper__vk__border > div.wrapper__vk__border__info > div.wrapper__vk__border__info__firstName  {
+  padding: 1%;
+}
+
+.wrapper > div.wrapper__vk > div.wrapper__vk__border > div.wrapper__vk__border__info > div.wrapper__vk__border__info__lastName {
+  padding: 1%;
+}
+
+.wrapper > div.wrapper__vk > div.wrapper__vk__border > div.wrapper__vk__border__info > div.wrapper__vk__border__info__date {
+  padding: 1%;
+}
+
+.wrapper > div.wrapper__vk > div.wrapper__vk__border > div.wrapper__vk__border__info > div.wrapper__vk__border__info__sex {
+  white-space: nowrap;
+  padding: 1%;
+}
+
+.wrapper > div.wrapper__vk > div.wrapper__vk__border > div.wrapper__vk__border__error {
+  grid-row: 2/3;
+  align-self: center;
+  justify-self: center;
+  padding: 3%;
+  font-weight: bold;
+  color: red;
+  letter-spacing: 0.1em;
+}
+
+.wrapper > div.wrapper__instagram {
+  grid-column: 2/3;
+  justify-self: center;
+  padding: 5%;
 }
